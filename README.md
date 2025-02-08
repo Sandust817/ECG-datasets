@@ -33,6 +33,10 @@ The dataset includes the following labels for the heart conditions:
 
 This dataset can be used for training and testing ECG classification algorithms. You can use the `.dat` files for ECG signal analysis, the `.atr` files for the corresponding labels, and the `.hea` files for metadata and sampling rate.
 
+## Download
+
+You can download this dataset at https://pan.baidu.com/s/1sFfLr0KPpZqNncmmERDo_g?pwd=8eer.
+
 ## License
 
 This dataset is provided under the [Your License Here] license.
@@ -41,4 +45,4 @@ This dataset is provided under the [Your License Here] license.
 
 If you use this dataset in your research, please cite the following paper:
 
-> Author, Title, Journal/Conference, Year.
+
