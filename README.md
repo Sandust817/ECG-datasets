@@ -1,4 +1,4 @@
-# ECG Dataset
+# ECGhm2025
 
 This dataset contains electrocardiogram (ECG) data collected for the purpose of heart condition classification. The data is provided in two lead types: **single lead** and **three leads**. Each record contains ECG data in three files:
 
