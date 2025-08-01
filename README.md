@@ -14,21 +14,10 @@ Each record is stored in its own folders. The folders contains json files.That's
 `Result`: Data label; `AF`: Suspected atrial fibrillation; `ABNORMAL`: Suspected abnormal rhythm; `NORMAL`: Normal rhythm.
 `Data`: ECG data; ECG1: Channel 1 data ECG2: Channel 2 data ECG3: Channel 3 data. To convert to millivolts, the formula is: `data * 1.05 * 1000/(4095 * 70)`
 
-## ECG Types
-
-- **Single-lead ECG**: Data from a single ECG lead.
-- **Three-lead ECG**: Data from three ECG leads.
-
-## Label Categories
-
-The dataset includes the following labels for the heart conditions:
-- **AF**: Atrial fibrillation (suspected).
-- **ABNORMAL**: Abnormal rhythm.
-- **NORMAL**: Normal heart rhythm.
 
 ## Usage
 
-This dataset can be used for training and testing ECG classification algorithms. You can use the `.dat` files for ECG signal analysis, the `.atr` files for the corresponding labels, and the `.hea` files for metadata and sampling rate.
+This dataset can be used for training and testing ECG classification algorithms for AI.
 
 ## Download
 
