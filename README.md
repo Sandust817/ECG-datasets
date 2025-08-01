@@ -13,10 +13,10 @@ The dataset is divided into two main folders based on the ECG type:
 2. **threelead**: Contains records from three-lead ECG devices.
 
 Each record is stored in its own folders. The folders contains json files.That's json description:
-'Id': Unique identifier of data;
-'EcgType': device type; 1-Single lead device 2-Triple lead device; The sampling rate is uniformly 256
-'Result': Data label; AF: Suspected atrial fibrillation ABNORMAL: Suspected abnormal rhythm
-'Data': ECG data; ECG1: Channel 1 data ECG2: Channel 2 data ECG3: Channel 3 data. To convert to millivolts, the formula is: data * 1.05 * 1000/(4095 * 70)
+`Id`: Unique identifier of data;
+`EcgType`: device type; 1-Single lead device 2-Triple lead device; The sampling rate is uniformly 256
+`Result`: Data label; `AF`: Suspected atrial fibrillation; `ABNORMAL`: Suspected abnormal rhythm; `NORMAL`: Normal rhythm.
+`Data`: ECG data; ECG1: Channel 1 data ECG2: Channel 2 data ECG3: Channel 3 data. To convert to millivolts, the formula is: data * 1.05 * 1000/(4095 * 70)
 
 ## ECG Types
 
