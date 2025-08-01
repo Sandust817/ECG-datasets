@@ -1,10 +1,6 @@
 # ECGhm2025
 
-This dataset contains electrocardiogram (ECG) data collected for the purpose of heart condition classification. The data is provided in two lead types: **single lead** and **three leads**. Each record contains ECG data in three files:
-
-- `.hea`: Contains the metadata of the ECG signal, such as sampling rate, ECG type, and other information.
-- `.dat`: Contains the processed ECG signal data.
-- `.atr`: Contains the label information, such as the heart condition.
+This dataset contains electrocardiogram (ECG) data collected for the purpose of heart condition classification. The data is provided in two lead types: **single lead** and **three leads**. Each record contains json files.
 
 ## Data Structure
 
@@ -16,7 +12,7 @@ Each record is stored in its own folders. The folders contains json files.That's
 `Id`: Unique identifier of data;
 `EcgType`: device type; 1-Single lead device 2-Triple lead device; The sampling rate is uniformly 256
 `Result`: Data label; `AF`: Suspected atrial fibrillation; `ABNORMAL`: Suspected abnormal rhythm; `NORMAL`: Normal rhythm.
-`Data`: ECG data; ECG1: Channel 1 data ECG2: Channel 2 data ECG3: Channel 3 data. To convert to millivolts, the formula is: data * 1.05 * 1000/(4095 * 70)
+`Data`: ECG data; ECG1: Channel 1 data ECG2: Channel 2 data ECG3: Channel 3 data. To convert to millivolts, the formula is: `data * 1.05 * 1000/(4095 * 70)`
 
 ## ECG Types
 
