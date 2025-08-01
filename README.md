@@ -12,10 +12,11 @@ The dataset is divided into two main folders based on the ECG type:
 1. **singlelead**: Contains records from single-lead ECG devices.
 2. **threelead**: Contains records from three-lead ECG devices.
 
-Each record is stored in its own folder, named as `record_001`, `record_002`, etc. The folder contains three files:
-- `record_001.hea`: Metadata for the record.
-- `record_001.dat`: The ECG signal data.
-- `record_001.atr`: The label for the record (such as `AF`, `ABNORMAL`, or `NORMAL`).
+Each record is stored in its own folders. The folders contains json files.That's json description:
+'Id': Unique identifier of data;
+'EcgType': device type; 1-Single lead device 2-Triple lead device; The sampling rate is uniformly 256
+'Result': Data label; AF: Suspected atrial fibrillation ABNORMAL: Suspected abnormal rhythm
+'Data': ECG data; ECG1: Channel 1 data ECG2: Channel 2 data ECG3: Channel 3 data. To convert to millivolts, the formula is: data * 1.05 * 1000/(4095 * 70)
 
 ## ECG Types
 
@@ -35,7 +36,7 @@ This dataset can be used for training and testing ECG classification algorithms.
 
 ## Download
 
-You can download this dataset at https://pan.baidu.com/s/1sFfLr0KPpZqNncmmERDo_g?pwd=8eer.
+You can download this dataset at 链接: https://pan.baidu.com/s/1038fkW77DKoTZpwdr8WWuA, extracted code is: p3sd.
 
 ## License
 
